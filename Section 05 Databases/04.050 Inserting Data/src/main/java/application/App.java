@@ -24,14 +24,15 @@ public class App {
 		stmt.execute(sql);
 		
 		sql = "select id, name from user"; // select the columns of the table
-		var rs = stmt.executeQuery(sql); // to get data we can't use execute(), we need to use executeQuery()
+		// to get data we can't use execute(), we need to use executeQuery()
+		// rs is an instance that point to the row of the table
+		var rs = stmt.executeQuery(sql);
 
 		// we have to call next on a result set before we get data, the loop will step over all the rows that match our query
 		// in this case all the rows that exists in the table
-		while(rs.next()) {
-			int id = rs.getInt("id");
-			String name = rs.getString("name");
-			
+		while(rs.next()) { //rs.next() returns boolean false if we reach the end of the table
+			int id = rs.getInt("id"); // create an int variable to hold the id data
+			String name = rs.getString("name"); // create a sting variable to hold the name data
 			System.out.println(id + ": " + name);
 		}
 		
