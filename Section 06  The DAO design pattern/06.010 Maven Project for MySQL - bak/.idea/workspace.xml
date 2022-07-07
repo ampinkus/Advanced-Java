@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e37b8b23-9916-4abf-8972-f11cbd6d76da" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Section 06  The DAO desiogn pattern/06.010 Maven Project for MySQL/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Section 06  The DAO desiogn pattern/06.010 Maven Project for MySQL/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Section 06  The DAO desiogn pattern/06.010 Maven Project for MySQL/src/main/java/com/caveofprogramming/db/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Section 06  The DAO desiogn pattern/06.010 Maven Project for MySQL/src/test/java/com/caveofprogramming/db/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Section 06  The DAO desiogn pattern/06.020 Downloading MySQL Connector/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Section 06  The DAO desiogn pattern/06.020 Downloading MySQL Connector/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Section 06  The DAO desiogn pattern/06.020 Downloading MySQL Connector/src/main/java/com/caveofprogramming/db/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Section 06  The DAO desiogn pattern/06.020 Downloading MySQL Connector/src/test/java/com/caveofprogramming/db/AppTest.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2BcLVBfdKUzJExDuM0R49acGRpL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e37b8b23-9916-4abf-8972-f11cbd6d76da" name="Changes" comment="" />
+      <created>1657200451924</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1657200451924</updated>
+    </task>
+    <servers />
+  </component>
+</project>
