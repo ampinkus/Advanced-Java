@@ -8,6 +8,7 @@ package SQLexample;
     * Model Object or Value Object - This object is simple POJO containing get/set methods to store data retrieved using DAO class.
        (POJO: Plain Old Java Objects)
  */
+import java.util.List;
 import java.util.Optional;
 /*
     Specifying angular brackets after the class name means you are creating a temporary data type which can hold any type of data.
@@ -24,4 +25,5 @@ public interface Dao<T> {
     Optional<T> findById(int id);
     void update(T t);
     void delete(T t);
+    List<T> getAll();
 }
