@@ -31,6 +31,12 @@ public class Database {
     private Database() { // private constructor, the only way we can create an instance of this class is invoking the method instance() of this class
     }
 
+    //getter
+    // return the connection class
+    public Connection getConnection() {
+        return conn;
+    }
+
     //methods
     // static method that returns an object of the Database class
     public static Database instance() {

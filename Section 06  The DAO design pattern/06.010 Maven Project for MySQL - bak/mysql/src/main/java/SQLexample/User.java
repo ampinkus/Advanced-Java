@@ -1,7 +1,7 @@
 package SQLexample;
 /*
-    This class represent an user and is in correspondence with a row of the user table.
-    We design the database to generate the id automatically.
+    This class represents a user and is in correspondence with a row of the user table.
+    We designed the database to generate the id automatically.
  */
 public class User {
     private int id;
@@ -32,5 +32,11 @@ public class User {
         this.name = name;
     }
 
-
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
+    }
 }

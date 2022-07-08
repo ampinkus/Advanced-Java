@@ -25,5 +25,5 @@ public interface Dao<T> {
     Optional<T> findById(int id);
     void update(T t);
     void delete(T t);
-    List<T> getAll();
+    List<T> getAll(); // returns a list of T's whatever T is
 }

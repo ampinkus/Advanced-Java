@@ -20,6 +20,11 @@ public class App
 
         System.out.println("Connected to the database");
 
+        UserDao userDao = new UserDaoImpl();
+        // userDao.save(new User("Mars")); We comment out because they are just added to the database
+        // userDao.save(new User("Mercury"));
+        // userDao.save(new User("Neptune"));
+
 
         try{
             db.close();
