@@ -19,21 +19,30 @@ import java.sql.SQLException;
 
 // singleton class should have public visibility so that complete application can use it
 public class Database {
-    //static instance of class globally accessible, perhaps is an erro to call the instance private?
-    private static Database db = new Database(); // create a private static Database instance called db
+    // Attributes
+    // static instance of type Database called db, is private because db is only accessible inside this class
+    private static Database db = new Database();
+
+    // URL is the link to the database
     private static final String URL = "jdbc:mysql://localhost:3306/people?serverTimezone=UTC";
     private Connection conn;
 
-    public static Database instance() {  // static method that returns an object of the Database class
-        return db;
-    }
-    private Database() { // private constructor, we can create an instance of this class only invoking the method instance() of this class
+    // constructor
+    private Database() { // private constructor, the only way we can create an instance of this class is invoking the method instance() of this class
     }
 
-    public void connect() throws SQLException { // method to conenct to a database
+    //methods
+    // static method that returns an object of the Database class
+    public static Database instance() {
+        return db;
+    }
+
+    // method to connect to a database
+    public void connect() throws SQLException {
         conn = DriverManager.getConnection(URL, "alfredo", "Hammil01");
     }
 
+    // method to close the connection
     public void close() throws SQLException {
         conn.close();
     }
