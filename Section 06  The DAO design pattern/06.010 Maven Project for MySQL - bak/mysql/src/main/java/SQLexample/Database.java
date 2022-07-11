@@ -16,6 +16,7 @@ package SQLexample;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.Properties;
 
 // singleton class should have public visibility so that complete application can use it
 public class Database {
@@ -44,8 +45,15 @@ public class Database {
     }
 
     // method to connect to a database
-    public void connect() throws SQLException {
-        conn = DriverManager.getConnection(URL, "alfredo", "Hammil01");
+    // we use the db.prod.properties file to get the information of the database
+    public void connect(Properties props) throws SQLException {
+        String server = props.getProperty("server");
+        String port = props.getProperty("port");
+        String database = props.getProperty("database");
+        String user = props.getProperty("user");
+        String password = props.getProperty("password");
+        String url = String.format("jdbc:mysql://%s:%s/%s?serverTimezone=UTC", server,port, database);
+        conn = DriverManager.getConnection(URL, user, password);
     }
 
     // method to close the connection
