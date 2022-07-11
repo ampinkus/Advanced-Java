@@ -4,22 +4,11 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.Properties;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
     public static void main( String[] args )  {
-        // include the properties dp.properties file
-        Properties props = new Properties();
-        String propertiesFile = "/config/db.prod.properties";
-        try {
-            props.load(App.class.getResourceAsStream(propertiesFile));
-        } catch (NullPointerException | IOException e) {
-            System.out.println("Can't load properties file: " + propertiesFile);
-            throw new RuntimeException(e);
-        }
+        var props = Profile.getProperties("db");
+
 
         System.out.println( "Trying to connect to the database...." );
         var db = Database.instance(); // create a Database instance called db
